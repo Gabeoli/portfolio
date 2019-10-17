@@ -1,0 +1,32 @@
+footer {
+    .social-media-icons {
+        display: flex;
+        justify-content: center;
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            li{
+                display: inline-block;
+                margin: 0 7.5px;
+
+                img {
+                    transition: 0.2s ease-out;
+
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+
+    #name {
+        text-align: center;
+        p{
+            font-size: 0.6em;   
+            color: #c9c9c9;
+        }
+    }
+}

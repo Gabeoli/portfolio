@@ -10,7 +10,7 @@ import ContactSection from "../components/home_sections/ContactSection"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Portfolio" />
     <HeroSection/>
     <ProjectSection/>
     <ContactSection/>

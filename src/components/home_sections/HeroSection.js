@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
 
-export default class HeroSection extends Component {
+class HeroSection extends Component {
+    
+
     render() {
         return (
             <section id="hero">
                 <div className="text">
-                    <h1>Make digital stuffs.</h1>
+                    <h1>I Make digital stuffs.</h1>
                 </div>
             </section>
         )
     }
 }
+
+export default HeroSection

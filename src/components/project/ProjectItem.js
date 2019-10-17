@@ -1,11 +1,16 @@
 import React, { Component } from 'react'
+import { Link } from "gatsby"
+import anime from 'animejs'
 
-export default class ProjectItem extends Component {
+class ProjectItem extends Component {
+    
     render() {
         return (
             <div className="project-item">
                 <div className="project-image">
-                    <img src={this.props.image}/>
+                    <Link to={"Work/" + this.props.link}>
+                        <img src={this.props.image}/>
+                    </Link>
                 </div>
                 <div className="project-text">
                     <h3>{this.props.project}</h3>
@@ -15,3 +20,5 @@ export default class ProjectItem extends Component {
         )
     }
 }
+
+export default ProjectItem

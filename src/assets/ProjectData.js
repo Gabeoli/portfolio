@@ -10,32 +10,39 @@ const projects = {
 
     "okoach": [{
         "projectName":"Okoach",
-        "image": okoachShowcase
+        "image": okoachShowcase,
+        "link":"Okoach"
     }],
     "stamp": [{
         "projectName":"Stamp",
-        "image": stampShowcase
+        "image": stampShowcase,
+        "link":"Stamp"
     }],
     "thehubb": [{
         "projectName":"The Hubb",
-        "image": thehubbShowcase
+        "image": thehubbShowcase,
+        "link":"TheHubb"
     }],
     "pocketlearner": [{
 
         "projectName":"Pocket Learner",
-        "image": pocketlearnerShowcase
+        "image": pocketlearnerShowcase,
+        "link":"PocketLearner"
     }],
     "ember": [{
         "projectName":"Ember",
-        "image": emberShowcase
+        "image": emberShowcase,
+        "link":"Ember"
     }],
     "hsbc": [{
         "projectName":"HSBC Private Banking",
-        "image": hsbcShowcase
+        "image": hsbcShowcase,
+        "link":"HSBC"
     }],
     "gbkcareers": [{
         "projectName":"GBK Careers",
-        "image": gbkShowcase
+        "image": gbkShowcase,
+        "link":"GBK"
     }],
     
 }

@@ -3,6 +3,10 @@
 @import 'hero-section';
 @import 'project-section';
 @import 'contact-section';
+@import 'footer';
+
+@import 'project-pages';
+@import 'about-page';
 
 body, html {
     padding: 0px;
@@ -12,7 +16,7 @@ body, html {
 }
 
 h1, h2, h3, h4 {
-    font-family: $BigShoulder;
+    font-family: $Unisans;
     font-weight: 900;
     color: $Black;
 }
@@ -31,4 +35,10 @@ p, li, a, span {
 
 .container {
     width: 100%;
+}
+
+.disclosure {
+    font-weight: 700;
+    color: red;
+    font-size: 0.75em;
 }

@@ -1,5 +1,5 @@
 #contact-section {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,5 +12,13 @@
             line-height: 1em;   
         }
 
+    }
+
+    @media screen and (max-width: 768px){
+       .text-container {
+           h1 {
+               font-size: 2em;
+           }
+       }
     }
 }

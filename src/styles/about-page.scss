@@ -1,0 +1,50 @@
+#about-page {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 30px;
+
+    .hero-section{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .header-text{
+            width:70%;
+            h1{
+                font-size: 5em;
+            }
+        }
+    }
+
+    .more-details{
+        width: 45%;
+
+        .paragraphs {
+            margin-bottom: 75px;
+
+
+            p{
+                font-size: 1.25em;
+                padding-bottom: 15px;
+                text-align: justify;
+            }
+        }
+
+        .skills-list{
+
+            h3{
+                margin: 0;
+            }
+            ul{
+                column-count: 2;
+                padding: 0;
+                list-style: none;
+
+                li{
+                    font-size: 1.25em;  
+                }
+            }
+        }
+    }
+}
