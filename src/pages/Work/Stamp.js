@@ -10,7 +10,13 @@ import StampThree from "../../images/stamp-assets/Stamp_3.jpg"
 import StampFour from "../../images/stamp-assets/Stamp_4.jpg"
 import StampFive from "../../images/stamp-assets/Stamp_5.jpg"
 import StampSix from "../../images/stamp-assets/Stamp_6.jpg"
+import StampSeven from "../../images/stamp-assets/Stamp_7.jpg"
+import StampEight from "../../images/stamp-assets/Stamp_8.jpg"
+import StampNine from "../../images/stamp-assets/Stamp_9.jpg"
+import StampTen from "../../images/stamp-assets/Stamp_10.jpg"
 import BackBtn from "../../components/BackBtn"
+
+import ProjectContent from "../../components/ProjectContent"
 
 const StampPage = () => (
   <Layout>
@@ -22,11 +28,9 @@ const StampPage = () => (
                     <h1>Stamp</h1>
                     <h2>Research - Branding - UX - App Design</h2>
                 </div>
+                <ProjectContent project="stamp"/>
                 <div className="description">
                     <p>
-                        Stamp is a mobile app aimed to encourage fitness by mixing gamification with running. Research suggests that competitiveness among others adds motivation for people to improve themselves. In Stamp, users will compete with other users to capture real life areas through the app by running routes, the more the user runs the same area, the more reinforced it gets. If others run the same routes, they can steal the areas that you have captured.
-
-                        <br/><br/>
                         <a href="https://www.figma.com/proto/KoroukKUCXWkQiDhBIzb83Il/Stamp-Digital-Experience?node-id=7%3A14&viewport=68%2C413%2C0.10929367691278458&scaling=scale-down" target="_blank">View Figma Prototype</a>
                     </p>
                 </div>
@@ -36,6 +40,21 @@ const StampPage = () => (
             <ul>
                 <li>
                     <img src={StampOne} alt="Stamp 1"/>
+                </li>
+                <li>
+                    <img src={StampSix} alt="Stamp 6"/>
+                </li>
+                <li>
+                    <img src={StampSeven} alt="Stamp 7"/>
+                </li>
+                <li>
+                    <img src={StampEight} alt="Stamp 8"/>
+                </li>
+                <li>
+                    <img src={StampNine} alt="Stamp 9"/>
+                </li>
+                <li>
+                    <img src={StampTen} alt="Stamp 10"/>
                 </li>
                 <li>
                     <img src={StampTwo} alt="Stamp 2"/>
@@ -49,10 +68,7 @@ const StampPage = () => (
                 <li>
                     <img src={StampFive} alt="Stamp 5"/>
                 </li>
-                <li>
-                    <img src={StampSix} alt="Stamp 6"/>
-                </li>
-            </ul>
+            </ul>   
         </div>
         <BackBtn/>
     </div>

@@ -5,31 +5,97 @@
     margin-top: 75px;   
 
     .project-details {
-        height: 60vh;
+        height: 70vh;
         display: flex;
         align-items: center;
 
         .text-holder{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
             .inline-text{
-                *{
-                    display: inline-block;
-                }
+                flex: 1;
 
                 h1{
                     font-size: 5em;
                     margin:0;
                 }
+                
                 h2 {
                     color: #C9C9C9;
                 }
             }
 
             .description{
-                max-width: 960px;
+                margin:0;
+                flex:1;
+            }
+
+            .content-holder {
+                width: 100%;
+                flex: 2;
+                
+                .content{
+                    height: 100%;
+                
+                    .tabs{
+                        width: 100%;
+                        ul{
+                            padding: 0;
+
+                            .active {
+                                opacity: 1;
+                                position: relative;
+                            }
+
+                            li{
+                                display: inline-block;
+                                margin-right: 20px;
+                                font-family: $Unisans;
+                                font-weight: 700;
+                                opacity: 0.2;
+                                transition: 0.3s ease-out;
+                                position: relative;
+                            }
+                            li:hover{
+                                opacity: 1;
+                                cursor:pointer;
+                            }
+
+                            li:before{
+                                content: "";
+                                position: absolute;
+                                width: 100%;
+                                height: 3px;
+                                bottom: -5px;
+                                left: 0;
+                                background-color: $Black;
+                                visibility: hidden;
+                                transform: scaleX(0);
+                                transition: all 0.3s ease-in-out;
+                            }
+                    
+                            li:hover:before{
+                                visibility: visible;
+                                -webkit-transform: scaleX(1);
+                                transform: scaleX(1);
+                            }
+
+                        }
+                    }
+
+                    .case-study{
+                        width: 60%;
+                    }
+                }
             }
         }
 
+    }
 
+    .description{
+        width: 50%;
+        margin: 100px 0;
     }
 
     .project-image-list {
@@ -97,8 +163,9 @@
     }
 
     @media screen and (max-width:768px){
+        margin-top: 100px;
+
         .project-details {
-            height: initial;
             
             .text-holder{
                 .inline-text {
@@ -112,8 +179,78 @@
                         display: block;
                     }
                 }
+
+                .content-holder{
+                    .content{
+                        ul {
+                            li{
+                                width: 30px;
+                                height: 30px;
+                                background: $Black;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
             }
 
+        }
+    }
+
+    @media screen and (max-width: 840px){
+        .project-details {
+            height: initial;
+
+            .text-holder{
+
+                .content-holder {
+
+                    .content{
+                        ul {
+                            li{
+                                width: 30px;
+                                height: 30px;
+                                background: $Black;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 940px){
+        .project-details {
+
+            .text-holder {
+
+                .content-holder {
+                    .content {
+                        .case-study{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media screen and (min-width: 941px) and (max-width: 1440px){
+        .project-details {
+
+            .text-holder {
+
+                .content-holder {
+                    .content{
+                        .case-study{
+                            width: 80%;
+                        }
+                    }
+                }
+            }
         }
     }
 }

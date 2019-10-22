@@ -11,6 +11,7 @@ import EmberFour from "../../images/ember-assets/Ember_4.jpg"
 import EmberFive from "../../images/ember-assets/Ember_5.jpg"
 
 import BackBtn from "../../components/BackBtn"
+import ProjectContent from "../../components/ProjectContent"
 
 
 const EmberPage = () => (
@@ -23,11 +24,7 @@ const EmberPage = () => (
                     <h1>Ember</h1>
                     <h2>UX - Research - App Design</h2>
                 </div>
-                <div className="description">
-                    <p>
-                        Ember is an app aimed for patients currently looking for clinical trials. As a team of three people we were to research, design and present this project at university, my role was the UX Designer. The app is also aimed at doctors/clinics to be able to list their clinical trails in one place, patients have the ability to contact these doctors to ask questions pre, during and post clinical trial. The user experience was aimed to be simple and almost linear, with large prominent buttons and minimal text on screen to not confuse patients when looking for a trial.
-                    </p>
-                </div>
+                <ProjectContent project="ember"/>
             </div>
         </div>
         <div className="project-image-list">

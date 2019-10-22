@@ -12,6 +12,7 @@ import PocketLearnerFive from "../../images/pocketlearner-assets/PocketLearner_5
 import PocketLearnerSix from "../../images/pocketlearner-assets/PocketLearner_6.jpg"
 import PocketLearnerSeven from "../../images/pocketlearner-assets/PocketLearner_7.jpg"
 import BackBtn from "../../components/BackBtn"
+import ProjectContent from "../../components/ProjectContent"
 
 const PocketLearnerPage = () => (
   <Layout>
@@ -23,11 +24,7 @@ const PocketLearnerPage = () => (
                     <h1>Pocket Learner</h1>
                     <h2>UX - Rebrand - App Design</h2>
                 </div>
-                <div className="description">
-                    <p>
-                       A challenge to turn a physical card game aimed to teach children with learning difficulties into a mobile app. Rebranded with a more child friendly theme and a UX designed for children to use independantly and teachers or parents to help kids.
-                    </p>
-                </div>
+                <ProjectContent project="pocketlearner"/>
             </div>
         </div>
         <div className="project-image-list">

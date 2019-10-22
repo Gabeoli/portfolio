@@ -7,7 +7,7 @@ class ContactSection extends Component {
             <section id="contact-section">
                 <div className="text-container">
                     <h1>You should shoot me an email.</h1>
-                    <Link to="contact">Shoot me an e-mail</Link>
+                    <a href="mailto:me@gabrieldeanolivar.com">me@gabrieldeanolivar.com</a>
                 </div>
             </section>
         )

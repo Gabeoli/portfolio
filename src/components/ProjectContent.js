@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import MenuBtn from './MenuBtn'
-import MenuDesktop from './MenuDesktop'
-import anime from 'animejs'
+import ProjectContentMenu from './ProjectContentMenu';
+import ProjectContentMenuMobile from './ProjectContentMenuMobile';
 
-class ConditionalMenu extends Component {
+class ProjectContent extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -22,22 +21,22 @@ class ConditionalMenu extends Component {
       }
     
       updatePredicate() {
-        this.setState({ isDesktop: window.innerWidth > 768 });
+        this.setState({ isDesktop: window.innerWidth > 840 });
       }
     
       render() {
         const isDesktop = this.state.isDesktop;
     
         return (
-          <div>
+          <div className="content-holder">
             {isDesktop ? (
-              <MenuDesktop/>
+              <ProjectContentMenu project={this.props.project}/>
             ) : (
-              <MenuBtn/>
+              <ProjectContentMenuMobile project={this.props.project}/>
             )}
           </div>
         );
-    }
+      }
 }
 
-export default ConditionalMenu
+export default ProjectContent

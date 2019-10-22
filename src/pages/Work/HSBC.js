@@ -14,6 +14,7 @@ import HSBCSeven from "../../images/hsbc-assets/HSBC_7.jpg"
 import HSBCEight from "../../images/hsbc-assets/HSBC_8.jpg"
 
 import BackBtn from "../../components/BackBtn"
+import ProjectContent from "../../components/ProjectContent"
 
 const HSBCPage = () => (
   <Layout>
@@ -25,14 +26,10 @@ const HSBCPage = () => (
                     <h1>HSBC Private Banking</h1>
                     <h2>UX - Research - App Design</h2>
                 </div>
+                <ProjectContent project="hsbc"/>
                 <div className="description">
                     <p>
-                        As part of a live brief, HSBC asked to create something for their private banking, aiming it at the new generation of wealth or inheritance from old wealth, hence the app design. Research was conducted about what is private banking, the demographic it's aimed at and how competitors approach digital private banking. Brainstorms and wireframes were created which led to the high fidelity prototype.
-
-                        <br/><br/>
-
                         <span className="disclosure">The HSBC work implemented here has not been accepted for commercial use by HSBC</span>
-
                         <br/><br/>
                         <a href="https://www.figma.com/proto/aV72027UGWfUxu1PIRkKjQxZ/HSBC-Private-Banking?node-id=11%3A1&viewport=324%2C-291%2C0.303881973028183&scaling=scale-down" target="_black">View Figma Prototype</a>
                     </p>

@@ -7,12 +7,15 @@
 
 @import 'project-pages';
 @import 'about-page';
+@import 'contact-page';
+@import 'loading';
 
 body, html {
     padding: 0px;
     margin: 0;
     width: 100%;
     background: $White;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -35,6 +38,12 @@ p, li, a, span {
 
 .container {
     width: 100%;
+}
+
+.home-page {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 30px;
 }
 
 .disclosure {

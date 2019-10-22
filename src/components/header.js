@@ -2,11 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import Logo from "../images/my_logo.svg"
-import ConditionalMenu from "./menu/ConditionalMenu"
+import MenuDesktop from "../components/menu/MenuDesktop"
+
+
 const Header = ({ siteTitle }) => (
   <header>
     <Link to="#" id="home-link"><img src={Logo} alt="GDO" className="logo"/></Link>
-    <ConditionalMenu/>
+    <MenuDesktop/>
   </header>
 )
 

@@ -7,7 +7,9 @@ class HeroSection extends Component {
         return (
             <section id="hero">
                 <div className="text">
-                    <h1>I Make digital stuffs.</h1>
+                    <div className="holder">
+                        <h1>I Make digital stuffs.</h1>
+                    </div>
                 </div>
             </section>
         )

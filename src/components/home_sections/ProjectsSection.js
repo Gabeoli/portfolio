@@ -1,24 +1,8 @@
 import React, { Component } from 'react'
 import ProjectItem from '../project/ProjectItem'
 import ProjectData from '../../assets/ProjectData'
-import anime from 'animejs'
 
 class ProjectsSection extends Component {
-
-    componentDidMount(){
-        this.staggerImages();
-    }
-
-    staggerImages = () => {
-        anime({
-        targets: '.project-item',
-        translateY: [-50, 0],
-        opacity: [0, 1],
-        easing: 'easeInOutSine',
-        delay: anime.stagger(500),
-        });
-    }
-
 
     render() {
 
@@ -26,16 +10,16 @@ class ProjectsSection extends Component {
             <section id="project-section">
                 <div className="row">
                     <ProjectItem 
-                        image={ProjectData.okoach[0].image}
-                        project={ProjectData.okoach[0].projectName}
-                        tags="Branding - UX - Development"
-                        link={ProjectData.okoach[0].link}
-                    />
-                    <ProjectItem 
                         image={ProjectData.stamp[0].image}
                         project={ProjectData.stamp[0].projectName}
                         tags="Research - Branding - UX - App Design"
                         link={ProjectData.stamp[0].link}
+                    />
+                    <ProjectItem 
+                        image={ProjectData.okoach[0].image}
+                        project={ProjectData.okoach[0].projectName}
+                        tags="Branding - UX - Development"
+                        link={ProjectData.okoach[0].link}
                     />
                 </div>
                 <div className="row">

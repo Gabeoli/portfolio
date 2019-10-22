@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from "gatsby"
-import anime from 'animejs'
 
 class ProjectItem extends Component {
     
@@ -13,7 +12,9 @@ class ProjectItem extends Component {
                     </Link>
                 </div>
                 <div className="project-text">
-                    <h3>{this.props.project}</h3>
+                <Link to={"Work/" + this.props.link}>
+                    {this.props.project}
+                </Link>
                     <p>{this.props.tags}</p>
                 </div>
             </div>

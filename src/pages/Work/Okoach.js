@@ -13,6 +13,8 @@ import OkoachSix from "../../images/okoach-assets/Okoach_6.jpg"
 import OkoachSeven from "../../images/okoach-assets/Okoach_7.jpg"
 import BackBtn from "../../components/BackBtn"
 
+import ProjectContent from "../../components/ProjectContent"
+
 const OkoachPage = () => (
   <Layout>
     <SEO title="Okoach"/>
@@ -23,12 +25,9 @@ const OkoachPage = () => (
                     <h1>Okoach</h1>
                     <h2>Branding - UX - Development</h2>
                 </div>
+                <ProjectContent project="okoach" />
                 <div className="description">
                     <p>
-                        The problem with online coaching is that many coaches use text based software such as word documents or excel spreadsheets to distribute their training programmes to their athletes and clients. Okoach is a mobile app designed to tackle this problem, allowing coaches to create training programmes and send to their athletes. Research and testing was done with coaches and athletes in order to design a great user experience for the demographic.
-
-                        <br/><br/>
-
                         <a href="https://github.com/Gabeoli/Okoach" target="_blank">Visit Github Repo</a>
                     </p>
                 </div>
