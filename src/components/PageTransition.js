@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { TimelineLite, TweenMax, TweenLite, RoughEase} from "gsap/all"
+import { TimelineLite, TweenMax, TweenLite, RoughEase, CSSPlugin} from "gsap"
 
 class PageTransition extends Component {
     constructor(props){
