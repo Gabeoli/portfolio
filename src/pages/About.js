@@ -12,7 +12,7 @@ const AboutPage = () => (
     <div id="about-page">
       <div className="hero-section">
         <div className="header-text">
-          <h1>My name is Gabriel, I'm a digital designer based in London. </h1>
+          <h1>What do you want to know? </h1>
         </div>
       </div>
       <div className="more-details">

@@ -15,12 +15,6 @@
             h1{
                 font-size: 5em;
                 position: relative;
-                color:$Champagne;
-            }
-            h1:before{
-                content: "My name is Gabriel, I'm a digital designer based in London.";
-                position: absolute;
-                top: 7px;
                 color:$Black;
             }
         }

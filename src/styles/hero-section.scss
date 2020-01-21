@@ -15,16 +15,8 @@
             h1{
                 font-size: 5em;
                 margin: 0;
-                color: $Champagne;
+                color: $Black;
                 position: relative;
-            }
-
-            h1:before{
-                content: "I Make Digital Stuffs.";
-                position: absolute;
-                top: 7px;
-                left: 0;
-                color:$Black;
             }
         }
             
