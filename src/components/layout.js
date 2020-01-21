@@ -21,14 +21,14 @@ const Layout = ({ children }) => {
 
   return (
     <div id="page">
-      <PageTransition/>
-        <FadeIn>
+      {/* <PageTransition/> */}
+        {/* <FadeIn> */}
             <Header siteTitle={data.site.siteMetadata.title} />
             <div className="container" id="container">
               {children}
             </div>
             <Footer/>
-        </FadeIn>
+        {/* </FadeIn> */}
     </div>
   )
 }
